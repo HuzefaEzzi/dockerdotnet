@@ -1,8 +1,8 @@
 FROM microsoft/dotnet:sdk
 
-ENV ASPNETCORE_URLS=http://*:5000
+ENV ASPNETCORE_URLS=http://*:5050
 
-EXPOSE 5000
+EXPOSE 5050
 
 WORKDIR /app
 

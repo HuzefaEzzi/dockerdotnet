@@ -8,13 +8,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace dotnet
+namespace dockerdotnet
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).UseUrls("http://*:5050").Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
